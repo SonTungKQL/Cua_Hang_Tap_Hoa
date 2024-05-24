@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img src="D:\Cua_hang_tap_hoa\images/logo.jpg" alt="Grocery Store Logo" class="logo">
+                    Grocery Store
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promotions.html">Khuyến mãi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Đăng ký</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <h2 id="product-name">Rau củ quả</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product1.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">50,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Cam trái</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product2.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">10,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Bơ trái</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product3.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">20,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Các loại trái cây sấy</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product4.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">50,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Các loại hạt khô</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product5.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">10,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Tôm khô và mực khô</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product6.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">20,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Trà sữa</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product7.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">25,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Cam vắt</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product8.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">10,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Ép dưa hấu</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product9.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">10,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Thịt tươi sống</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product10.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">150,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Cá tươi sống</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product11.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">100,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Hải sản tươi sống</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product12.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">300,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Sữa tươi Vinamilk</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product13.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">300,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Sữa tươi Vinamilk(lóc)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product14.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">315,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">ữa tươi Vinamilk(lít)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product15.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">360,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Bánh</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product16.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">100,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Các loại kẹo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product17.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">50,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <h2 id="product-name">Các loại kẹo dẻo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="D:\Cua_hang_tap_hoa\images/product18.jpg" class="img-fluid" alt="Sản phẩm">
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-price">20,000 VND</h3>
+                <p id="product-description">Mô tả sản phẩm</p>
+                <button class="btn btn-success" onclick="addToCart(getProductIdFromUrl())">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Thông tin chi tiết về chủ sở hữu website: Địa chỉ, số điện thoại, email liên hệ.</p>
+            <p><a href="#" class="text-white">Chính sách bảo mật</a> | <a href="#" class="text-white">Điều khoản sử dụng</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.githubusercontent.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productId = getProductIdFromUrl();
+            displayProductDetails(productId);
+        });
+
+        function getProductIdFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+    </script>
+</body>
+</html>
